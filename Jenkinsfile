@@ -5,13 +5,10 @@ def cdConfig = [
     chart: [
         repo: "https://github.com/dhavlev/helm-charts.git",
         branch: "voting-app"
+    ],
+    infra: [
+        chart: "voting-app-redis"
     ]
-]
-
-def ciConfig = [
-    dockerRegistry: "dhavlev",
-    repoName: "voting-app-redis",
-    version: "1.0.0"
 ]
 
 
